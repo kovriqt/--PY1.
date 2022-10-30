@@ -1,7 +1,8 @@
 def get_count_char(main_str):
     dict = {}
     for i in main_str.lower():
-        if i.isalpha()== True and  i in dict.keys()::
+        if i.isalpha():
+            if i in dict.keys():
               number = dict[i]+1
               dict[i] = number
             else:
