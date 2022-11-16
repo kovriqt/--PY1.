@@ -4,7 +4,8 @@ def get_random_password(n=None) -> str:
     if n is None:
         password ='error'
     else:
-        password = random.sample(''.join([string.ascii_uppercase, string.ascii_lowercase, string.octdigits]), n)
+        book=''.join([string.ascii_uppercase, string.ascii_lowercase, string.octdigits])
+        password =''.join(random.sample(book, n))
     return password
       #TODO написать функцию генерации случайных паролей
-print(get_random_password())
+print(get_random_password(7))
